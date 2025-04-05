@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farm Direct - Marketplace</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Farm Direct Logo" class="logo-icon">
+      <h1>Farm Direct</h1>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="weather.html">Weather Forecast</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="loan.html">Loan</a></li>
+      
+    </ul>
+     <!-- Cart Icon -->
+<div class="cart-icon" onclick="toggleCart()">
+  <i class="fas fa-shopping-bag"></i> <!-- Changed to shopping bag icon -->
+  <span id="cart-count">0</span>
+</div>
+
+    
+  </nav>
+
+  <!-- Background Slideshow -->
+  <div class="background-slideshow">
+    <div class="slide fade">
+      <img src="images/african-people-harvesting-vegetables (2).jpg" alt="Market Background 1">
+    </div>
+    <div class="slide fade">
+      <img src="images/paddy-harvest-golden-yellow-paddy-hand-farmer-carrying-paddy-hand-rice.jpg" alt="Market Background 2">
+    </div>
+  </div>
+
+  <!-- Marketplace Products -->
+<div class="page-content">
+  <section id="marketplace">
+    <div class="container">
+      <h2>Marketplace</h2>
+      <div class="product-grid">
+        <div class="product-box">
+          <img src="images/farm-worker-driving-tractor-spraying-green-meadow-generated-by-ai.jpg" alt="Modern Equipments">
+          <h3>Modern Equipments</h3>
+          <p>₹20,000</p>
+          <button class="add-to-cart-btn" onclick="addToCart('Modern Equipments', 20000, 'images/farm-worker-driving-tractor-spraying-green-meadow-generated-by-ai.jpg')">
+            <i class="fas fa-shopping-bag"></i> Add to Cart
+          </button>
+        </div>
+        <div class="product-box">
+          <img src="images/wheat-seeds-pouring-out-hand-representing-good-yields-successful-harvest.jpg" alt="Seeds">
+          <h3>Seeds</h3>
+          <p>₹50</p>
+          <button class="add-to-cart-btn" onclick="addToCart('Seeds', 50, 'images/wheat-seeds-pouring-out-hand-representing-good-yields-successful-harvest.jpg')">
+            <i class="fas fa-shopping-bag"></i> Add to Cart
+          </button>
+        </div>
+        <div class="product-box">
+          <img src="images/selling-plant-online-close-up-picture-hand-holding-sack-soil.jpg" alt="Manure">
+          <h3>Manure</h3>
+          <p>₹30</p>
+          <button class="add-to-cart-btn" onclick="addToCart('Manure', 50, 'images/selling-plant-online-close-up-picture-hand-holding-sack-soil.jpg')">
+            <i class="fas fa-shopping-bag"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+        
+      </div>
+    </section>
+      <!-- Cart Sidebar (Hidden by default) -->
+  <div id="cart-sidebar" class="cart-sidebar">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <div class="cart-footer">
+      <p>Total: ₹<span id="cart-total">0</span></p>
+      <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+  </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Farm Direct. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

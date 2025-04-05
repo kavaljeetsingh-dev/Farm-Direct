@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farm Direct - Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Farm Direct Logo" class="logo-icon">
+      <h1>Farm Direct</h1>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="weather.html">Weather Forecast</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="loan.html">Loan</a></li>
+      
+    </ul>
+  </nav>
+
+  
+  <div class="background-slideshow">
+    <div class="slide fade">
+      <img src="images/view-woman-working-agricultural-sector-celebrate-labour-day-women.jpg" alt="Background 1">
+    </div>
+    <div class="slide fade">
+      <img src="images/farm-worker-driving-tractor-spraying-green-meadow-generated-by-ai.jpg" alt="Background 2">
+    </div>
+  </div>
+
+  <!-- Login Form Content -->
+  <div class="page-content">
+    <div class="login-form">
+      <h2>Login to Farm Direct</h2>
+      <form id="login-form" onsubmit="return validateLoginForm()">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="role">I am a:</label>
+        <select id="role" name="role" required>
+          <option value="farmer">Farmer</option>
+          <option value="buyer">Buyer</option>
+        </select>
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Farm Direct. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
